@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Terminal from '../Terminal'
+import TerminalHeader from '../TerminalHeader'
 import { container } from './index.css'
 
-const App = () => {
+const Terminal = () => {
   return (
     <div className={container}>
-      <Terminal />
+      <TerminalHeader />
     </div>
   )
 }
 
-export default App
+export default Terminal

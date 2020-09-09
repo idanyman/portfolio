@@ -1,0 +1,16 @@
+.header {
+  padding-top: 7;
+  padding-left: 12;
+  display: flex;
+  align-items: baseline;
+}
+
+.headerTitle {
+  cursor: move;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15;
+  text-align: center;
+  flex-grow: 1;
+}
