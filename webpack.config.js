@@ -6,6 +6,9 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
+    new HtmlWebPackPlugin({
+      favicon: './src/assets/favicon.png'
+    })
   ],
   module: {
     rules: [
