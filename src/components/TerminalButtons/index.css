@@ -16,22 +16,37 @@
   background-color: #ff6159;
 }
 
-.buttonClose:hover {
+.buttonClose:hover, .buttonClose:active {
   background-color: #bf4942;
+  outline: none;
+}
+
+.buttonClose:focus {
+  outline: none;
 }
 
 .buttonMinimize {
   background-color: #ffbd2e;
 }
 
-.buttonMinimize:hover {
+.buttonMinimize:hover, .buttonMinimize:active {
   background-color: #bf8e22;
+  outline: none;
+}
+
+.buttonMinimize:focus {
+  outline: none;
 }
 
 .buttonMaximize {
   background-color: #28c941;
 }
 
-.buttonMaximize:hover {
+.buttonMaximize:hover, .buttonMaximize:active {
   background-color: #1d9730;
+  outline: none;
+}
+
+.buttonMaximize:focus {
+  outline: none;
 }
