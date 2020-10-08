@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/idanyman/portfolio#readme",
   "dependencies": {
+    "node-forge": "0.10.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
