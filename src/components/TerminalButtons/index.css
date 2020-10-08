@@ -12,8 +12,40 @@
   margin-right: 8;
 }
 
+.button:before, .button:after {
+  visibility: hidden;
+  content: '';
+  position: absolute;
+  border-radius: 1px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.button:hover:before, .button:hover:after, .button:active:before, .button:active:after {
+  visibility: visible;
+}
+
 .buttonClose {
   background-color: #ff6159;
+}
+
+.buttonClose:before, .buttonClose:after {
+  background-color: #4d0000;
+  width: 8px;
+  height: 1px;
+  left: 2px;
+  top: 9px;
+  margin: inherit;
+}
+
+.buttonClose:before {
+  transform: rotate(45deg);
+}
+
+.buttonClose:after {
+  transform: rotate(-45deg);
 }
 
 .buttonClose:hover, .buttonClose:active {
@@ -25,8 +57,20 @@
   outline: none;
 }
 
+.buttonClose:active:before, .buttonClose:hover:before, .buttonClose:active:after, .buttonClose:hover:after {
+  background-color: #190000;
+}
+
 .buttonMinimize {
   background-color: #ffbd2e;
+}
+
+.buttonMinimize:before {
+  background-color: #995700;
+  width: 8px;
+  height: 1px;
+  top: 9px;
+  left: 22px;
 }
 
 .buttonMinimize:hover, .buttonMinimize:active {
@@ -38,8 +82,30 @@
   outline: none;
 }
 
+.buttonMinimize:active:before, .buttonMinimize:hover:before {
+  background-color: #592800;
+}
+
 .buttonMaximize {
   background-color: #28c941;
+}
+
+.buttonMaximize:before, .buttonMaximize:after {
+  top: 9px;
+  left: 41px;
+}
+
+.buttonMaximize:before {
+  background-color: #006500;
+  width: 6px;
+  height: 6px;
+}
+
+.buttonMaximize:after {
+  background-color: #28c941;
+  width: 10px;
+  height: 2px;
+  transform: rotate(45deg);
 }
 
 .buttonMaximize:hover, .buttonMaximize:active {
@@ -49,4 +115,12 @@
 
 .buttonMaximize:focus {
   outline: none;
+}
+
+.buttonMaximize:active:before, .buttonMaximize:hover:before {
+  background-color: #1d9730;
+}
+
+.buttonMaximize:active:after, .buttonMaximize:hover:after {
+  background-color: #003200;
 }
